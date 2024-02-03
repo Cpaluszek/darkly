@@ -34,3 +34,5 @@ hydra command in the script `attack_password.sh` breakdown:
 - Strong Password Policy: Enforce a strong password policy that requires users to create complex passwords. This policy could include requirements such as minimum length, the use of uppercase and lowercase letters, numbers, and special characters.
 - CAPTCHA or Rate Limiting: Implement CAPTCHA challenges or rate-limiting mechanisms to prevent automated tools like Hydra from making multiple login attempts within a short period. 
 - Two-Factor Authentication (2FA)
+
+
