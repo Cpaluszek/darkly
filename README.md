@@ -1,4 +1,5 @@
 # darkly
+Introductory project to computer security in the specific field of the web.
 
 ## Tools
 - [Get Kali | Kali Linux](https://www.kali.org/get-kali/#kali-installer-images)
@@ -11,3 +12,7 @@
 - `docker build -t kali .`
 - `docker run -it kali`
 - we are within the container and can execute the scripts copied into `root/scripts`
+
+## Found vulnerabilities
+- SQL injection
+- Password brute force attack
