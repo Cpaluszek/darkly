@@ -96,12 +96,11 @@ The decrypted hash md5 give: *FortyTwo*
 
 If we encrypt `fortytwo` with SHA256 we have: `10a16d834f9b1e4068b25c4c46fe0284e99e44dceaf08098fc83925ba6310ff5`
 
-## How to prevent SQL injection
+## Prevention 
+-> [SQL Injection Prevention - OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html)
 ### Client Side (JQUERY)
 - Input sanitization, before sending any data to the server
 - Use input masks to restrict user input to specific formats.
-
-
 
 ### Server side (PHP)
 - Use ORM
