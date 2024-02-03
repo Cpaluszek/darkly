@@ -1,5 +1,6 @@
 FROM kalilinux/kali-rolling
 
+# TODO: set the correct IP address
 ENV IP_ADDRESS=192.168.1.32
 
 RUN apt-get update \
