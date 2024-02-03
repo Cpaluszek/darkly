@@ -1,6 +1,9 @@
 # darkly
 Introductory project to computer security in the specific field of the web.
 
+**CTF**
+**Pentest**
+
 ## Tools
 - [Get Kali | Kali Linux](https://www.kali.org/get-kali/#kali-installer-images)
 - [ZAP](https://www.zaproxy.org/)
