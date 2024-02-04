@@ -1,9 +1,13 @@
 # darkly
+Introductory project to computer security in the specific field of the web.
 
-## References
+**CTF**
+**Pentest**
+
+## Tools
 - [Get Kali | Kali Linux](https://www.kali.org/get-kali/#kali-installer-images)
 - [ZAP](https://www.zaproxy.org/)
-
+- [Debian Security Tools Packaging Team / wapiti · GitLab](https://salsa.debian.org/pkg-security-team/wapiti)
 
 ## How to run the audit
 - clone the repo
@@ -11,3 +15,7 @@
 - `docker build -t kali .`
 - `docker run -it kali`
 - we are within the container and can execute the scripts copied into `root/scripts`
+
+## Found vulnerabilities
+- SQL injection
+- Password brute force attack
