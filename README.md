@@ -22,3 +22,5 @@ Introductory project to computer security in the specific field of the web.
     - [SQL injection image page](./vulnerabilities/sql_injection_image/Resources/sql_injection_image.md)
 - [Password brute force attack](./vulnerabilities/weak_password/Ressources/weak_password.md)
 - [Directory browsing](./vulnerabilities/directory_browsing_whatever/Resources/directory_browsing_whatever.md)
+- [Password recover without form validation](./vulnerabilities/password_recover/Resources/password_recover.md)
+- [Cookie week encryption](./vulnerabilities/cookie/Resource/cookie.md)
