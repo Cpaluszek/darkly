@@ -18,4 +18,7 @@ Introductory project to computer security in the specific field of the web.
 
 ## Found vulnerabilities
 - SQL injection
-- Password brute force attack
+    - [SQL injection member page](./vulnerabilities/sql_injection_member/Resources/sql_injection_member.md)
+    - [SQL injection image page](./vulnerabilities/sql_injection_image/Resources/sql_injection_image.md)
+- [Password brute force attack](./vulnerabilities/weak_password/Ressources/weak_password.md)
+- [Directory browsing](./vulnerabilities/directory_browsing_whatever/Resources/directory_browsing_whatever.md)
