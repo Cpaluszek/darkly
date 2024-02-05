@@ -1,10 +1,10 @@
 FROM kalilinux/kali-rolling
 
 # TODO: set the correct IP address
-ENV IP_ADDRESS=127.16.0.98
+ENV IP_ADDRESS=192.168.76.128
 
 RUN apt-get update \
-    && apt-get install -y vim curl hydra sqlmap
+    && apt-get install -y vim curl hydra sqlmap figlet
 
 RUN mkdir -p /root/password_list \
   && curl -k https://raw.githubusercontent.com/danielmiessler/SecLists/master/Passwords/Common-Credentials/10-million-password-list-top-500.txt -o /root/password_list/10-million-password-list-top-500.txt
