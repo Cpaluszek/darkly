@@ -13,7 +13,7 @@ Introductory project to computer security in the specific field of the web.
 - clone the repo
 - `python3 -m http-server` to see the ZAP report on `localhost:8000`
 - `docker build -t kali .`
-- `docker run -it kali`
+- `docker run -it --name kali kali`
 - we are within the container and can execute the scripts copied into `root/scripts`
 
 ## Found vulnerabilities
