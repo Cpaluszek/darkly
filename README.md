@@ -23,4 +23,6 @@ Introductory project to computer security in the specific field of the web.
 - [Password brute force attack](./vulnerabilities/weak_password/Ressources/weak_password.md)
 - [Directory browsing](./vulnerabilities/directory_browsing_whatever/Resources/directory_browsing_whatever.md)
 - [Password recover without form validation](./vulnerabilities/password_recover/Resources/password_recover.md)
-- [Cookie week encryption](./vulnerabilities/cookie/Resource/cookie.md)
+- [Cookie week encryption](./vulnerabilities/cookie/Resource/cookie.md)s
+- XSS injection
+    - [XSS feedback page](./vulnerabilities/xss_feedback/Resources/xss_feedback.md)
