@@ -13,7 +13,7 @@ Introductory project to computer security in the specific field of the web.
 - clone the repo
 - `python3 -m http-server` to see the ZAP report on `localhost:8000`
 - `docker build -t kali .`
-- `docker run -it kali`
+- `docker run -it --name kali kali`
 - we are within the container and can execute the scripts copied into `root/scripts`
 
 ## Found vulnerabilities
@@ -23,4 +23,7 @@ Introductory project to computer security in the specific field of the web.
 - [Password brute force attack](./vulnerabilities/weak_password/Ressources/weak_password.md)
 - [Directory browsing](./vulnerabilities/directory_browsing_whatever/Resources/directory_browsing_whatever.md)
 - [Password recover without form validation](./vulnerabilities/password_recover/Resources/password_recover.md)
-- [Cookie week encryption](./vulnerabilities/cookie/Resource/cookie.md)
+- [Cookie week encryption](./vulnerabilities/cookie/Resource/cookie.md)s
+- XSS injection
+    - [XSS feedback page](./vulnerabilities/xss_feedback/Resources/xss_feedback.md)
+    - [XSS media page](./vulnerabilities/xss_media/Resources/xss_media.md)
