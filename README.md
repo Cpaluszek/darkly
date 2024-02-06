@@ -26,3 +26,4 @@ Introductory project to computer security in the specific field of the web.
 - [Cookie week encryption](./vulnerabilities/cookie/Resource/cookie.md)s
 - XSS injection
     - [XSS feedback page](./vulnerabilities/xss_feedback/Resources/xss_feedback.md)
+    - [XSS media page](./vulnerabilities/xss_media/Resources/xss_media.md)
