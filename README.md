@@ -14,7 +14,7 @@ Introductory project to computer security in the specific field of the web.
 - `python3 -m http-server` to see the ZAP report on `localhost:8000`
 - `docker build -t kali .`
 - `docker run -it --name kali kali`
-- we are within the container and can execute the scripts copied into `root/scripts`
+- - we are within the container and can check the vulnerabilities in `/root/vulnerabilities`
 
 ## Found vulnerabilities
 - SQL injection
