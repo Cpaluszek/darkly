@@ -15,7 +15,7 @@ It is possible to view a listing of the directory contents. Directory listings m
 [OWASP Top Ten 2017 | A6:2017-Security Misconfiguration | OWASP Foundation](https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html)
 
 ## Exploit
-If we access: `http://172.16.0.98/whatever/`
+If we access: `http://x.x.x.x/whatever/`
 
 We can see a file named `htpasswd` which can be downloaded.
 
@@ -27,7 +27,7 @@ We decoded the password value using MD5 encryption via the following website:
 
 **Result:** `qwerty123@`
 
-If we try to input the decrypted password and user on the page: `http://172.16.0.98/admin`
+If we try to input the decrypted password and user on the page: `http://x.x.x.x/admin`
 
 We get this result:
 ![Result](./admin.png)

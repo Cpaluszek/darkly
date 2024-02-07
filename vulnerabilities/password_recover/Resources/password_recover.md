@@ -1,7 +1,7 @@
 [README.md](../../../README.md)
 # Password recover
 ## Reconnaissance
-When going to the recover password page: `http://172.16.0.98/index.php?page=recover`
+When going to the recover password page: `http://x.x.x.x/index.php?page=recover`
 We can see a strange form with a button, missing a input field for email or username.
 
 ![Password recover](./password_recover.png)
