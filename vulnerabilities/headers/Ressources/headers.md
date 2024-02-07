@@ -8,7 +8,7 @@
 </ul>
 
 ```
-- we follow the link and land on a page that teach us what "Les Diomédéidés (Diomedeidae)" a sea birds family. 
+- we follow the link and land on a page that teach us what "Les Diomédéidés (Diomedeidae)" are: for the curious a sea birds family. 
 - we go further and inspect the page. If we select the image, we can find some detail in the `Elements` folder of the inspector. A digression on "Lorem Ipsum" history and some misterious clue:
 
 ```
@@ -48,7 +48,7 @@ Example: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.3
 ## Exploit
 In Postman we made a GET request to the page linked in the footer of our website, adding 2 headers:
 referer = `https://www.nsa.gov/`
-user-agent = `ft_bornToSec`
+user-agent = `git statft_bornToSec`
 
 That's all.
 
