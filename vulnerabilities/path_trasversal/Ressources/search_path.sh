@@ -18,4 +18,3 @@ figlet YES YOU DID IT CLEM AND MAT !
 echo "Here below the response containing the flag:"
 echo
 echo "$response"
-

@@ -1,7 +1,7 @@
 FROM kalilinux/kali-rolling
 
 # TODO: set the correct IP address
-ENV IP_ADDRESS=x.x.x.x
+ENV IP_ADDRESS=192.168.76.129
 
 RUN apt-get update \
     && apt-get install -y vim curl hydra sqlmap figlet
