@@ -7,22 +7,19 @@ if [ -z "$IP_ADDRESS" ]; then
   exit 1
 fi
 
-# Set the IP address from the environment variable
-IP="$IP_ADDRESS"
-
 DOWNLOAD_DIR="./download_hidden"
 mkdir -p "$DOWNLOAD_DIR"
 cd "$DOWNLOAD_DIR"
 
-echo "Downloading files from http://$IP/.hidden/ ..."
+echo "Downloading files from http://$IP_ADDRESS/.hidden/ ..."
 
-if wget -np -r -e robots=off "http://$IP/.hidden/" > download.log 2>/dev/null; then
+if wget -np -r -e robots=off "http://$IP_ADDRESS/.hidden/" > download.log 2>/dev/null; then
   echo -e "\n\nDownload complete.\n"
   echo "Searching for files named README that contain digits ..."
   echo -e "\n\n"
   find . -name "README" -type f -print0 | xargs -0 grep -Hn '[0-9]'
 else
-  echo "Error: Failed to download files from http://$IP/.hidden/"
+  echo "Error: Failed to download files from http://$IP_ADDRESS/.hidden/"
   /bin/rm -rf "$DOWNLOAD_DIR"
   exit 1
 fi
