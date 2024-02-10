@@ -29,6 +29,7 @@ But befor going further, what is a crawler?
 ## Exploit
 - Accessing "/.hidden" reveals a directory structure with multiple README files.
 - Manually inspecting README files shows repetitive content across many files.
+- we create a script that loop on all the subdirectories excluding robots file and search for the README containg digits
 - if `curl http://192.168.76.129/.hidden/whtccjokayshttvxycsvykxcfm/igeemtxnvexvxezqwntmzjltkt/lmpanswobhwcozdqixbowvbrhw/README`
 we have the flag:
 `Hey, here is your flag : d5eec3ec36cf80dce44a896f961c1831a05526ec215693c8f2c39543497d4466`
