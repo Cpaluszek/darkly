@@ -4,6 +4,8 @@ Introductory project to computer security in the specific field of the web.
 **CTF**
 **Pentest**
 
+Vulnerabilites presentation: [Darkly - Vulnerabilites - Figma](https://www.figma.com/proto/rpPHzw7NBAGEtKID4RCUTk/Darkly?type=design&node-id=24-231&t=rD8vdLMGdpj4yYEJ-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=24%3A231)
+
 ## Tools
 - [Get Kali | Kali Linux](https://www.kali.org/get-kali/#kali-installer-images)
 - [ZAP](https://www.zaproxy.org/)
