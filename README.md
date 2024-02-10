@@ -25,7 +25,13 @@ Vulnerabilites presentation: [Darkly - Vulnerabilites - Figma](https://www.figma
 - [Password brute force attack](./vulnerabilities/weak_password/Ressources/weak_password.md)
 - [Directory browsing](./vulnerabilities/directory_browsing_whatever/Resources/directory_browsing_whatever.md)
 - [Password recover without form validation](./vulnerabilities/password_recover/Resources/password_recover.md)
-- [Cookie week encryption](./vulnerabilities/cookie/Resource/cookie.md)s
+- [Cookie week encryption](./vulnerabilities/cookie/Resource/cookie.md)
+- [Robots.txt](./vulnerabilities/robots/Ressources/robots.md)
+- [Survery server side validation](./vulnerabilities/survey_serverside_validation/Ressources/survey_serverside_validation.md)
+- [File Upload](./vulnerabilities/upload_file/Ressources/upload_file.md)
+- [Path Traversal](./vulnerabilities/path_trasversal/Ressources/path_trasversal.md)
+- [Open Redirect](./vulnerabilities/open_redirect/Ressources/open_redirect.md)
+- [Headers](./vulnerabilities/headers/Ressources/headers.md)
 - XSS injection
     - [XSS feedback page](./vulnerabilities/xss_feedback/Resources/xss_feedback.md)
     - [XSS media page](./vulnerabilities/xss_media/Resources/xss_media.md)

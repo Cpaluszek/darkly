@@ -1,10 +1,11 @@
+[README.md](../../../README.md)
 # Upload file
-
+## Reconnaissance
 **ZAP report:**
 the report is nor highligthing this vulnerability, but we tested the same the possibility of uploading a file of jpeg type in the page linked to the ADD IMAGE button at the bottom of the homepage.
 Then we tried to upload a php file and that was not admitted. so a security measure is in place. to bypass that we simulated a post request using Postman uploading file php in the wrong type image/jpeg passed in the body and the attack was successfull, as explained in details in the following section.
 
-**Attack method:**
+## Exploit
 - Open Postman and create a new request.
 - Set the HTTP method to POST and enter the URL `http://x.x.x.x/index.php?page=upload` => the same we land to if clicking on ADD IMAGE at the bottom of the homepage
 - In the Headers section, add a new header with the key `Content-Type` and the value `multipart/form-data` 
@@ -16,6 +17,7 @@ Then we tried to upload a php file and that was not admitted. so a security meas
 - After receiving the response, click on the search lens and type 'The flag is' => the response contains the flag. 
 
 
+## Prevention
 **How to address security concerns for this kind of attack:**
 
 - Check file signatures: File signature validation involves checking the magic number or the header of the file to ensure it matches the expected format. This is a more reliable method than checking the file extension or MIME type, as it ensures the file is actually of the claimed type.

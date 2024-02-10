@@ -1,6 +1,5 @@
 [README.md](../../../README.md)
 # XSS injection feedback page
-
 ## Reconnaissance
 ### ZAP report
 ```
